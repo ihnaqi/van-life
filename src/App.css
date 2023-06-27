@@ -1,0 +1,197 @@
+.header {
+    display: inline-flex;
+    padding: 2.25006rem 1.61369rem 2.16394rem 1.625rem;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 12vh;
+    gap: 14.70081rem;
+    background: #FFF7ED;
+}
+
+nav {
+    display: flex;
+    gap: 1rem;
+}
+
+.links {
+    color: #4D4D4D;
+    font-size: 1rem;
+    font-family: Inter;
+    font-weight: 600;
+    line-height: 1.43269rem;
+    text-decoration: none;
+}
+
+/* Home */
+.main {
+    width: 100%;
+    height: 80vh;
+    background: linear-gradient(0deg, #00000036 0%, #00000059 100%), url(/src/assets/images/bg-home.png), lightgray 0px -65.191px / 100% 178.109% no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 40%;
+    width: 40%;
+}
+
+.h-primary {
+    color: #FFF;
+    font-size: 2.25rem;
+    font-family: Inter;
+    font-weight: 800;
+    line-height: 2.625rem;
+}
+
+.main-desc {
+    color: #FFF;
+    font-size: 1rem;
+    font-family: Inter;
+    font-weight: 500;
+    line-height: 1.5rem;
+}
+
+.main-button {
+    color: #FFF;
+    text-align: center;
+    font-size: 0.99663rem;
+    font-family: Inter;
+    font-weight: 700;
+    line-height: 1.97888rem;
+    height: 3.1145rem;
+    flex-shrink: 0;
+    border-radius: 5px;
+    background: #FF8C38;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* About */
+.about-main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.about-figure {
+    max-width: 100%;
+}
+
+.about-content {
+    width: 80vh;
+    padding-block: 40px;
+    display: block;
+    margin: auto;
+}
+
+.about-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.about-title{
+    color: #161616;
+    font-size: 2rem;
+    font-family: Inter;
+    font-weight: 700;
+    line-height: 2.375rem;
+    margin-bottom: 1.96rem;
+    text-align: justify;
+}
+
+.about-text-section {
+    margin-bottom: 3.44rem;
+    height: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.about-text {
+    color: #161616;
+    font-size: 1rem;
+    font-family: Inter;
+    font-weight: 500;
+    line-height: 1.375rem;
+    text-align: justify;
+}
+
+.about-bottom-card {
+    border-radius: 5px;
+    background: #FFCC8D;
+    padding-inline: 2.31rem;
+    padding-block: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.h-secondary {
+    color: #161616;
+    font-size: 1.5rem;
+    font-family: Inter;
+    font-weight: 700;
+    line-height: 1.875rem;
+    margin-bottom: 1.5rem;
+}
+
+.explore-van-button {
+    width: 40%;
+    padding: 0.75rem 1.375rem 0.8125rem 1.375rem;
+    background: #161616;
+    color: #FFF;
+    font-size: 0.99663rem;
+    font-family: Inter;
+    font-weight: 700;
+    line-height: 1.49494rem;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform .1s ease-in-out;
+    text-decoration: none;
+}
+
+.explore-van-button:hover {
+    transform: translate(1px, 1px);
+}
+
+/* Footer */
+.footer {
+    height: 8vh;
+    background: #252525;
+    display: flex;
+    padding: 1.60506rem 6.64275rem 1.57175rem 6.625rem;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.footer-text {
+    color: #AAA;
+    text-align: center;
+    font-size: 0.875rem;
+    font-family: Inter;
+    font-weight: 500;
+    line-height: 1.43269rem;
+    display: flex;
+    gap: 0.5rem;
+}
+.footer-text > p{
+    display: inline-block;
+}
+
+.footer-text > a {
+    text-decoration: none;
+}
+.footer-logo {
+    text-transform: uppercase;
+    color: #AAA;
+}
