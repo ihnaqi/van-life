@@ -41,6 +41,25 @@ nav {
     width: 40%;
 }
 
+@media only screen and (max-width: 900px) {
+    .main-section {
+        height: 100%;
+        width: 70%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 40px;
+        text-align: justify;
+    }
+}
+
+@media only screen and(max-width: 700px) {
+    .main-section{
+        width: 90%;
+        gap: 1.3rem;
+    }
+}
+
 .h-primary {
     color: #FFF;
     font-size: 2.25rem;
@@ -156,10 +175,25 @@ nav {
     cursor: pointer;
     transition: transform .1s ease-in-out;
     text-decoration: none;
+    text-align: center;
 }
 
 .explore-van-button:hover {
     transform: translate(1px, 1px);
+}
+
+
+@media only screen and (max-width: 650px) {
+    .explore-van-button {
+        font-size: 0.65rem;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .explore-van-button {
+        width: 80%;
+        font-size: 0.5rem;
+    }
 }
 
 /* Footer */
