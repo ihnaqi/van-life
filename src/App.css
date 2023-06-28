@@ -3,7 +3,7 @@
     padding: 2.25006rem 1.61369rem 2.16394rem 1.625rem;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
+    width: 100vw;
     height: 12vh;
     gap: 14.70081rem;
     background: #FFF7ED;
@@ -85,9 +85,8 @@ nav {
 }
 
 .about-content {
-    width: 80vh;
+    width: 70vw;
     padding-block: 40px;
-    display: block;
     margin: auto;
 }
 
