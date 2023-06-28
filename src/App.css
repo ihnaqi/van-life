@@ -5,7 +5,6 @@
     align-items: center;
     width: 100vw;
     height: 12vh;
-    gap: 14.70081rem;
     background: #FFF7ED;
 }
 
@@ -25,18 +24,21 @@ nav {
 
 /* Home */
 .main {
-    width: 100%;
+    width: 100vw;
     height: 80vh;
     background: linear-gradient(0deg, #00000036 0%, #00000059 100%), url(/src/assets/images/bg-home.png), lightgray 0px -65.191px / 100% 178.109% no-repeat;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .main-section {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 20px;
     height: 40%;
     width: 40%;
 }
@@ -198,6 +200,7 @@ nav {
 
 /* Footer */
 .footer {
+    width: 100vw;
     height: 8vh;
     background: #252525;
     display: flex;
