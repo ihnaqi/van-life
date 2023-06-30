@@ -6,6 +6,7 @@ import logo from './assets/svgs/vanlife.svg'
 import './App.css'
 import Footer from './components/Footer'
 import './api/server'
+import VanDetail from './pages/VanDetail'
 
 function App() {
 
@@ -22,6 +23,7 @@ function App() {
         <Route path='/' element={<Home />} />
         <Route path='/about' element={<About />} />
         <Route path='/vans' element={<Vans />} />
+        <Route path="/vans/:id" element={<VanDetail />} />
       </Routes>
       <Footer />
     </BrowserRouter>

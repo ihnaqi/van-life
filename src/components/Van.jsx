@@ -6,10 +6,10 @@ export default function Van(props) {
             <section className='type-and-price'>
                 <div className='van-left'>
                     <h3 className='van-name'> {props.name} </h3>
-                    <button type='button' className='van-button'> {props.type} </button>
+                    <button type='button' className={`van-button ${props.type}`}> {props.type} </button>
                 </div>
                 <div>
-                    <h3 className='van-name'> {props.price} </h3>
+                    <h3 className='van-name'> {`$${props.price}`} </h3>
                     <p className='van-per-day'> /day </p>
                 </div>
             </section>

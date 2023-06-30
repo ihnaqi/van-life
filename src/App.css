@@ -205,10 +205,10 @@ nav {
 
 .vans-filter-options {
     display: flex;
-    justify-content: space-between;
+    gap: 1rem;
     padding-block: 10px;
     padding-inline: 7px;
-
+    flex-wrap: wrap;
 }
 
 .van-filter-btn {
@@ -237,6 +237,14 @@ nav {
     padding: 0 1.5rem;
 }
 
+.vans-content-container a {
+    text-decoration: none;
+    color: #161616;
+    font-size: 1.25rem;
+    font-family: Inter;
+    font-style: normal;
+}
+
 .van-content {
     width: 100%;
     padding-bottom: 2rem;
@@ -261,11 +269,129 @@ nav {
 .van-button {
     margin-top: 1rem;
     padding: 0.5rem 0.7rem;
-    border-radius: 10%;
+    border-radius: 7%;
     outline: none;
     border: none;
+    background-color: #FFEAD0;
+    color: #4D4D4D;
+    transition: 200ms all cubic-bezier(0.4, 0, 0.2, 1);
     text-transform: capitalize;
     cursor: pointer;
+}
+
+.van-button:hover {
+    color: #FFEAD0;
+}
+
+.van-button:focus {
+    outline: none;
+}
+
+.van-button.selected {
+    color: #FFEAD0;
+}
+
+.van-button.simple:hover, .van-button.simple {
+    background-color: #E17654;
+}
+
+.van-button.rugged:hover, .van-button.rugged {
+    background-color: #115E59;
+}
+
+.van-button.luxury:hover, .van-button.luxury {
+    background-color: #161616;
+}
+
+/* VansDetail */
+.van-detail-container {
+    padding: 1rem;
+    width: 100vw;
+}
+
+.van-detail-container a {
+    text-decoration: none;
+    color: #252525;
+}
+
+.back-button-text {
+    text-decoration: underline;
+}
+
+.back-button {
+    display: block;
+    margin-block: 1.3rem;
+}
+
+.van-detail-image {
+    width: 100%;
+    height: 70%;
+    object-fit: fill;
+    border-radius: 25px;
+}
+
+.van-button-detail {
+    padding-block: 0.7rem;
+    padding-inline: 1.5rem;
+    border-radius: 10px;
+    background: none;
+    outline: none;
+    border: none;
+    font-size: 1rem;
+    font-family: 'Inter';
+    font-weight: normal;
+    margin-block: 10px;
+    color: #FFEAD0;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+
+.van-button-detail.simple:hover, .van-button-detail.simple {
+    background-color: #E17654;
+}
+
+.van-button-detail.rugged:hover, .van-button-detail.rugged {
+    background-color: #115E59;
+}
+
+.van-button-detail.luxury:hover, .van-button-detail.luxury {
+    background-color: #161616;
+}
+
+.van-name{
+    margin-bottom: 0.36rem;
+}
+
+.text-small {
+    font-weight: 300;
+}
+
+.van-description {
+    text-align: justify;
+    color: #161616;
+    font-size: 1rem;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.49494rem;
+}
+
+.rent-van-button {
+    margin-block: 0.8rem;
+    width: 100%;
+    padding: 1rem 0;
+    border: none;
+    outline: none;
+    border-radius: 0.31144rem;
+    background: #FF8C38;
+    cursor: pointer;
+    color: #FFF;
+    text-align: center;
+    font-size: 1.125rem;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.97888rem;
 }
 
 /* Footer */
@@ -278,7 +404,9 @@ nav {
     justify-content: center;
     align-items: center;
     flex-shrink: 0;
-    vertical-align: bottom;
+    position: fixed;
+    left: 0;
+    bottom: 0;
 }
 
 .footer-text {
