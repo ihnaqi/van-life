@@ -22,6 +22,12 @@ nav {
     text-decoration: none;
 }
 
+.link-active, .links:hover{
+    font-weight: bold;
+    text-decoration: underline;
+    color: #161616;
+}
+
 /* Home */
 .main {
     width: 100vw;
@@ -394,6 +400,136 @@ nav {
     line-height: 1.97888rem;
 }
 
+/* Host */
+.host-nav {
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.host-nav a {
+    text-decoration: none;
+    color: #4D4D4D;
+    font-weight: 500;
+    padding: 5px 20px;
+}
+
+.host-nav a:hover, .host-nav a:active {
+    color: #161616;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.host-vans-list-warpper {
+    padding: 1rem;
+}
+
+.host-vans-list-warpper a {
+    text-decoration: none;
+    color: inherit
+}
+
+.host-van-container {
+    background: #FFF;
+    padding: 1rem;
+    border-radius: 1rem;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+
+.host-van-image {
+    height: 100px;
+    width: 100px;
+    border-radius: 2px;
+}
+
+/* Host Vans Detail Page */
+
+.host-van-detail-page {
+    padding: 2rem 1rem;
+}
+
+.host-van-detail-page a{
+    text-decoration: none;
+    color: #252525;
+}
+
+.host-van-detail-wrapper {
+    padding: 2rem;
+    background: #fff;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: space-between;
+}
+
+.host-van-detail-top {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.host-van-detail-image {
+    height: 20vw;
+    width: 20vw;
+}
+
+.host-van-detail-type {
+    padding: 0.3rem 0.8rem;
+    border-radius: 2px;
+    color:#FFEAD0;
+    border:none;
+    outline:none;
+    cursor: pointer;
+    width: 5rem;
+    text-transform: capitalize;
+}
+
+.host-van-detail-type:hover {
+    color: #FFF;
+}
+
+.host-van-detail-info {
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    gap: 0.756rem;
+}
+
+.simple {
+    background: #E17654;
+}
+
+.luxury {
+    background: #161616;
+}
+
+.rugged {
+    background: #FF8C38;
+}
+
+.host-van-detail-nav {
+    display: flex;
+}
+
+.host-van-detail-nav a {
+    text-decoration: none;
+    color: #4D4D4D;
+    cursor: pointer;
+}
+
+.host-van-detail-nav a:hover {
+    text-decoration: underline;
+}
+
+.van-detail-photo {
+    width: 15vw;
+    height: 15vw;
+}
 /* Footer */
 .footer {
     width: 100vw;
@@ -404,7 +540,7 @@ nav {
     justify-content: center;
     align-items: center;
     flex-shrink: 0;
-    position: fixed;
+    position: relative;
     left: 0;
     bottom: 0;
 }

@@ -1,13 +1,13 @@
 import React from 'react'
-import Van from '../components/Van'
-import {Link} from 'react-router-dom'
+import Van from '../../components/Van'
+import { Link } from 'react-router-dom'
 
-export default function Vans () {
-    const [vans, setVans] = React.useState([])
+export default function Vans() {
+    const [vans, setVans] = React.useState(null)
     React.useEffect(() => {
         fetch("/api/vans")
-        .then(res => res.json())
-        .then(data => setVans(data.vans))
+            .then(res => res.json())
+            .then(data => setVans(data.vans))
     }, [])
 
     return (
@@ -32,13 +32,23 @@ export default function Vans () {
                 </div>
             </section>
             <section className='vans-content-container'>
-            {
-                vans.map(van => {
-                    return <Link key={van.id} to={`/vans/:${van.id}`} >
-                        <Van  vanImg={van.imageUrl} name={van.name} price={van.price} type={van.type} />
-                    </Link>
-                })
-            }
+                {
+                    vans ?
+                        (vans.map(van => {
+                            return(
+                                <Link
+                                    key={van.id}
+                                    to={`/vans/:${van.id}`}
+                                >
+                                    <Van
+                                        vanImg={van.imageUrl}
+                                        name={van.name}
+                                        price={van.price}
+                                        type={van.type}
+                                    />
+                                </Link>
+                        )})) : <h2>Loading...</h2>
+                }
             </section>
         </main>
     )

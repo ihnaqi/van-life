@@ -19,9 +19,9 @@ export default function VanDetail () {
             {
                 van ? (
                     <>
-                        <Link to='/vans'>
+                        <Link to='..' relative="path">
                             <i className="back-button">
-                                {'\u2190'} &nbsp;&nbsp;
+                                &larr; &nbsp;&nbsp;
                                 <span className="back-button-text">
                                     Back to all vans
                                 </span>
