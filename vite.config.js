@@ -5,6 +5,5 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [
     react(),
-    "@vite/plugin-transform-experimental-nullish-coalescing-operator"
   ],
 })
