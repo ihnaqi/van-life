@@ -734,6 +734,13 @@ header .login-icon {
     padding-inline: 0;
 }
 
+.dashboard-van-img{
+    width: 100%;
+    height: 100vw;
+}
+
+/* Host Income Section */
+
 .host-income {
     padding-inline: 26px;
     color: #161616;
@@ -794,6 +801,8 @@ img.graph {
     font-size: 20px;
     color: #4d4d4d;
 }
+
+/* Host Review Section */
 
 .host-reviews {
     padding-inline: 26px;
