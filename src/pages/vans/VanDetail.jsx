@@ -1,8 +1,8 @@
 import { Link, useLocation, useLoaderData } from "react-router-dom"
-import { getVans } from "../../api/api"
+import { getVan } from "../../api/api"
 
 export function loader({params}) {
-    return getVans(params.id)
+    return getVan(params.id)
 }
 
 export default function VanDetail () {
